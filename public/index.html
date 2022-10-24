@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+    <title>React</title>
+    <style>
+      /* BACKEND STYLE */
+      @media all{
+        *{margin:0;border:0;padding:0;}
+        html,body{height:calc(100%);}
+        /* REMOVE SCROLL */
+        ._disableScroll{overflow:hidden!important;}
+        *::-webkit-scrollbar{width:0px;}/* Chrome, Safari, & Opera */
+        *{scrollbar-width:none;/* Firefox */-ms-overflow-style: none;/* IE & Edge */}
+        /* REMOVE DRAG, HIGHLIGHT, & POINTER */
+        [draggable=false]{
+        user-select:none;/* Chrome & Opera */
+        pointer-events:none;/* General CSS */
+        -o-user-select:none;/* Possibly useless*/
+        -ms-user-select:none;/* IE & Edge */
+        -moz-user-select:none;/* Firefox */
+        -khtml-user-select:none;/* Konqueror HTML */
+        -webkit-user-select:none;/* Safari */
+        -webkit-touch-callout:none;/* iOS Safari */
+        -webkit-tap-highlight-color:transparent;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        }
+      }
+      /* GLOBAL STYLE */
+	  	@media all{
+        #noscript{
+        color:white;
+        height:calc(100%);
+        display:flex;
+        font-size:5vw;
+        text-align:center;
+        align-items:center;
+        font-family:'Courier New';
+        background-color:#18191a;
+        justify-content:space-around;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript><div id="noscript" draggable="false">Enable Javascript</div></noscript>
+    <div id="root"></div>
+  </body>
+</html>
